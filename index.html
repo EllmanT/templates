@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tapiwa Ellman</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Tapiwa Ellman</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section_pic-container">
+        <img
+          src="./assets/full-profile.png"
+          alt="Tapiwa Ellman picture"
+          class="profile-pic"
+        />
+      </div>
+      <div class="section_text">
+        <p class="section_text_p1">Hi, I'm</p>
+        <h1 class="title">Tapiwa Ellman</h1>
+        <p class="section_text_p2">Full Stack Developer</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/tapiwa-e-muranda.pdf', '_blank' )"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedIn-logo.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://linkedin.com/in/tapiwa-muranda-2720b12a9', '_blank')"
+          />
+          <img
+            src="./assets/github-logo.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="window.open('https://github.com/EllmanT', '_blank')"
+          />
+        </div>
+        <img
+          src="./assets/arrow-down.png"
+          alt="Arrow Icon"
+          class="icon arrow1"
+          onclick="location.href='./#about'"
+        />
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <p class="section_text_p1">
+        "With a meticulous focus on user-centric design and robust coding
+        practices, I am a web developer who is dedicated to providing web
+        solutions that exceed expectations and empower businesses to thrive in
+        the digital realm."
+      </p>
+
+      <div class="section-container">
+        <div class="section_pic2-container">
+          <img
+            src="./assets/about-profile.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience Icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <br />
+              <p><b>6+</b> months of full stack development</p>
+
+              <p>
+                <b>3+</b>
+                Projects built
+              </p>
+            </div>
+
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education Icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <br />
+              <p>B.Sc. Bachelors Mechatronics(current)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore my</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Primary</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>React</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>Node JS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>Express</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Secondary</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>Data Modelling</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>CSS</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>Mongo Database</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience Icon"
+                  class="icon"
+                />
+                <div class="experience-p">
+                  <h3>Git</h3>
+                  <p>Beginner</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/myfleet.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">myfleet</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/EllmanT/myfleet', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://myfleet-ijfg.vercel.app', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/allea.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">allea</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/EllmanT/allea.com', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://allea.vercel.app/', '_blank')"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tapiwae.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h3 class="experience-sub-title project-title">tapiwaellman</h3>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="window.open('https://github.com/EllmanT/tapiwa-ellman-portfolio', '_blank')"
+              >
+                GitHub
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow-down.png"
+        alt="Arrow Icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    '
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+            size="25px"
+          />
+          <p><a href="mailto:exampleemail@gmail.com">tmuranda1@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedIn-logo.png"
+            alt="linkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://linkedin.com/in/tapiwa-muranda-2720b12a9"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/cell.png"
+            alt="linkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>+263 778 115 084</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright&#169; 2024 tapiwaellman. All rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
